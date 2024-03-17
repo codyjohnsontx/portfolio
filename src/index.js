@@ -1,13 +1,6 @@
-import React from "react";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App';
 
-const ContactForm = () => {
-  return (
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
-  );
-};
-
-export default ContactForm;
+// Keep this file clean of anything else but this.
+ReactDOM.render(<App />, document.getElementById('root'));
